@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09B1DF9A523B18A9FBF8C408 /* Pods_Ensemble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08C64D4907A5EA1865A8585 /* Pods_Ensemble.framework */; };
 		A711D15F28A5468800BA067C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A711D15E28A5468800BA067C /* AppDelegate.m */; };
 		A711D16228A5468800BA067C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A711D16128A5468800BA067C /* SceneDelegate.m */; };
 		A711D16528A5468800BA067C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A711D16428A5468800BA067C /* ViewController.m */; };
@@ -14,9 +15,12 @@
 		A711D16A28A5468A00BA067C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A711D16928A5468A00BA067C /* Assets.xcassets */; };
 		A711D16D28A5468A00BA067C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A711D16B28A5468A00BA067C /* LaunchScreen.storyboard */; };
 		A711D17028A5468A00BA067C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A711D16F28A5468A00BA067C /* main.m */; };
+		A711D17828A5610F00BA067C /* EnsembleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A711D17728A5610F00BA067C /* EnsembleViewController.swift */; };
+		A711D17A28A566EF00BA067C /* EnsembleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A711D17928A566EF00BA067C /* EnsembleViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		307A0D8E36525C1847E81D6B /* Pods-Ensemble.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ensemble.release.xcconfig"; path = "Target Support Files/Pods-Ensemble/Pods-Ensemble.release.xcconfig"; sourceTree = "<group>"; };
 		A711D15A28A5468800BA067C /* Ensemble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ensemble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A711D15D28A5468800BA067C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A711D15E28A5468800BA067C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +33,11 @@
 		A711D16C28A5468A00BA067C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A711D16E28A5468A00BA067C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A711D16F28A5468A00BA067C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A711D17628A5610F00BA067C /* Ensemble-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ensemble-Bridging-Header.h"; sourceTree = "<group>"; };
+		A711D17728A5610F00BA067C /* EnsembleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnsembleViewController.swift; sourceTree = "<group>"; };
+		A711D17928A566EF00BA067C /* EnsembleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnsembleViewModel.swift; sourceTree = "<group>"; };
+		C067A299A71806C653C8C085 /* Pods-Ensemble.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ensemble.debug.xcconfig"; path = "Target Support Files/Pods-Ensemble/Pods-Ensemble.debug.xcconfig"; sourceTree = "<group>"; };
+		C08C64D4907A5EA1865A8585 /* Pods_Ensemble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ensemble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +45,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09B1DF9A523B18A9FBF8C408 /* Pods_Ensemble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7ECA06B7D067E2D63AA775AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C08C64D4907A5EA1865A8585 /* Pods_Ensemble.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A711D15128A5468800BA067C = {
 			isa = PBXGroup;
 			children = (
 				A711D15C28A5468800BA067C /* Ensemble */,
 				A711D15B28A5468800BA067C /* Products */,
+				B8EFD02A409D9DBC1184F71F /* Pods */,
+				7ECA06B7D067E2D63AA775AA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,8 +92,21 @@
 				A711D16B28A5468A00BA067C /* LaunchScreen.storyboard */,
 				A711D16E28A5468A00BA067C /* Info.plist */,
 				A711D16F28A5468A00BA067C /* main.m */,
+				A711D17728A5610F00BA067C /* EnsembleViewController.swift */,
+				A711D17628A5610F00BA067C /* Ensemble-Bridging-Header.h */,
+				A711D17928A566EF00BA067C /* EnsembleViewModel.swift */,
 			);
 			path = Ensemble;
+			sourceTree = "<group>";
+		};
+		B8EFD02A409D9DBC1184F71F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C067A299A71806C653C8C085 /* Pods-Ensemble.debug.xcconfig */,
+				307A0D8E36525C1847E81D6B /* Pods-Ensemble.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +116,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A711D17328A5468A00BA067C /* Build configuration list for PBXNativeTarget "Ensemble" */;
 			buildPhases = (
+				7BEEA8DA7C08118F4A0359E2 /* [CP] Check Pods Manifest.lock */,
 				A711D15628A5468800BA067C /* Sources */,
 				A711D15728A5468800BA067C /* Frameworks */,
 				A711D15828A5468800BA067C /* Resources */,
+				2246B276EB0FCF266FAE1475 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -107,6 +142,7 @@
 				TargetAttributes = {
 					A711D15928A5468800BA067C = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 				};
 			};
@@ -141,13 +177,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2246B276EB0FCF266FAE1475 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ensemble/Pods-Ensemble-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ensemble/Pods-Ensemble-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ensemble/Pods-Ensemble-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BEEA8DA7C08118F4A0359E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ensemble-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A711D15628A5468800BA067C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A711D16528A5468800BA067C /* ViewController.m in Sources */,
+				A711D17828A5610F00BA067C /* EnsembleViewController.swift in Sources */,
 				A711D15F28A5468800BA067C /* AppDelegate.m in Sources */,
+				A711D17A28A566EF00BA067C /* EnsembleViewModel.swift in Sources */,
 				A711D17028A5468A00BA067C /* main.m in Sources */,
 				A711D16228A5468800BA067C /* SceneDelegate.m in Sources */,
 			);
@@ -225,7 +305,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -277,7 +357,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -287,14 +367,18 @@
 		};
 		A711D17428A5468A00BA067C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C067A299A71806C653C8C085 /* Pods-Ensemble.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YZB6M2WK7Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Ensemble/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "使用摄像头的目的，例如：for a call or live interactive streaming。\n使用摄像头的目的，例如：for a call or live interactive streaming。";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "使用麦克风的目的，例如：for a call or live interactive streaming。";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -308,20 +392,27 @@
 				PRODUCT_BUNDLE_IDENTIFIER = TYSM.Ensemble;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Ensemble/Ensemble-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		A711D17528A5468A00BA067C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 307A0D8E36525C1847E81D6B /* Pods-Ensemble.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YZB6M2WK7Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Ensemble/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "使用摄像头的目的，例如：for a call or live interactive streaming。\n使用摄像头的目的，例如：for a call or live interactive streaming。";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "使用麦克风的目的，例如：for a call or live interactive streaming。";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -335,6 +426,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = TYSM.Ensemble;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Ensemble/Ensemble-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
